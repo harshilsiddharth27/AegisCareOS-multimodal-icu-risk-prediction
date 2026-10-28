@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@media print {
+  html, body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide navigation, buttons, app shell */
+  header, nav, footer, button, .no-print {
+    display: none !important;
+  }
+
+  /* Printable Rounds Briefing Document */
+  .printable-rounds-report {
+    display: block !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Ensure colors, badges, and backgrounds print crisp */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    margin: 10mm;
+    size: A4 portrait;
+  }
+}

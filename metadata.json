@@ -1,0 +1,6 @@
+{
+  "name": "MIMIC-IV Multimodal ICU Risk AI",
+  "description": "Multimodal Clinical Decision-Support System predicting 24-hour ICU in-hospital mortality using time-series vitals with missingness masks, clinical progress notes, and demographics with Gemini-powered rationale.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
